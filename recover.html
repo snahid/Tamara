@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Tymap | Cambiar clave</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <style>
+      ::placeholder {
+        color: white !important;
+      }
+
+      input[type="password"] {
+        background-color: initial !important;
+        opacity: 1 !important;
+        font-size: 1.5em !important;
+        padding: 0.5em 0.5em !important;
+        color: white !important;
+      }
+
+      #Cambiar {
+        padding: 1em !important;
+        margin: 0 25%;
+        width: 50%;
+        background-color: #003554;
+
+        background-image: linear-gradient(82deg, #003554 56%, #154f85 56%);
+      }
+
+      #Cambiar:hover {
+        cursor: no-drop;
+      }
+
+      .success {
+        box-shadow: inset 0px 0px 24px 5px rgba(34, 217, 31, 1);
+      }
+
+      .wrong {
+        box-shadow: inset 0px 0px 24px 5px rgba(224, 22, 42, 1);
+      }
+
+      #Cambiar.hand:hover {
+        cursor: pointer;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.css"
+    />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- Custom Theme files -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--google fonts-->
+
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body
+    background="img/fondo.png"
+    style="background-repeat: no-repeat; background-size: cover"
+  >
+    <!--element start here-->
+
+    <div class="elelment">
+      <h1 style="text-align: center"><img src="img/logo.png" /></h1>
+
+      <div class="element-main">
+        <h1>Nueva clave</h1>
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <form
+          id="FormRecover"
+          action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"
+          method="POST"
+          onsubmit="valData()"
+        >
+          <input
+            type="password"
+            id="provisional"
+            name="provisional"
+            placeholder="Introduce clave provisional"
+            required
+          />
+
+          <input
+            type="password"
+            id="clave"
+            onkeyup="valclave();"
+            name="clave"
+            placeholder="Introduce nueva clave"
+            required
+          />
+
+          <input
+            type="password"
+            id="Rclave"
+            onkeyup="valclave();"
+            name="Rclave"
+            placeholder="Repita clave"
+            required
+          />
+
+          <input
+            type="submit"
+            id="Cambiar"
+            name="Cambiar"
+            value="Cambiar clave"
+          />
+        </form>
+      </div>
+    </div>
+
+    <div class="copy-right">
+      <p>©2019 Tymap OÜ. Todos los derechos reservados.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js"></script>
+
+    <script type="text/javascript">
+      function valclave() {
+        let clave = document.getElementById("clave").value;
+
+        let Rclave = document.getElementById("Rclave").value;
+
+        let submit = document.getElementById("Cambiar");
+
+        if (clave === Rclave && clave.length > 0 && Rclave.length > 0) {
+          submit.disabled = false;
+
+          submit.classList.add("hand");
+
+          document.getElementById("Rclave").className = "success";
+        } else {
+          submit.disabled = true;
+
+          submit.classList.remove("hand");
+
+          document.getElementById("Rclave").className = "wrong";
+        }
+      }
+    </script>
+
+    <script>
+      function valData(e) {
+        event.preventDefault(e);
+
+        $.ajax({
+          type: "POST",
+
+          url: "./recover2.php",
+
+          data: $("#FormRecover").serialize(),
+
+          success: function (res) {
+            var res = $.parseJSON(res);
+
+            console.log(res);
+
+            if (res != false) {
+              Swal.fire({
+                position: "top-end",
+
+                type: "success",
+
+                title: "La clave ha sido cambiada",
+
+                showConfirmButton: false,
+
+                timer: 1500,
+              });
+            } else {
+              Swal.fire({
+                position: "top-end",
+
+                type: "error",
+
+                title: "verifique la clave provisional",
+
+                showConfirmButton: false,
+
+                timer: 1500,
+              });
+            }
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

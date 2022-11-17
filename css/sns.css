@@ -1,0 +1,9 @@
+/*ponemos p?rrafos con estilos de t?tulo h2 */
+
+.p_titulo{
+  color: #042f4f;
+  font-family: Roboto,sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 2em;
+}
