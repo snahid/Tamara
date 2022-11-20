@@ -673,6 +673,9 @@ body {
 }
 
 @media(max-width: 991px){
+  .custom_nav_menu .navbar-collapse{
+    padding-left: 0 !important;
+  }
   .footer-desktop-logo{
     display: none;
   }
