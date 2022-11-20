@@ -494,3 +494,9 @@
 
 
  })(jQuery);
+
+
+
+ var ndate = new Date();
+ var year = ndate.getFullYear();
+ document.getElementById("year").innerHTML = year;
