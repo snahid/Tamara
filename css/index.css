@@ -608,6 +608,9 @@ body {
   font-family: Poppins, sans-serif;
   font-weight: 400;
 }
+.nfeature-area .single-feature-area{
+  min-height: 258px;
+}
 .nfeature-area .feature-content-text p {
   color: #042f4f;
   font-family: Roboto, sans-serif;
@@ -846,6 +849,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .nfeature-area .single-feature-area{
+    min-height: unset;
+  }
   .nfeature-area .col-lg-7 {
     padding-left: 0;
     padding-right: 0;
