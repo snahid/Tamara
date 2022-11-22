@@ -637,6 +637,10 @@ body {
   color: #042f4f;
   font-size: 25px;
 }
+.tempa-one .p_titulo1{
+  font-size: 21px;
+}
+
 /* Integraction  */
 
 
@@ -676,6 +680,9 @@ body {
 
 
 @media (max-width: 1300px) {
+  .tempa-one .p_titulo{
+    font-size: 28px !important;
+  }
   .logistic-bottom .logistic-heading{
     font-size: 28px;
   }
@@ -694,9 +701,57 @@ body {
   .npl-4 {
     padding-left: 15px;
   }
+  .tempa-two .section-heading p{
+    font-size: 28px !important;
+  }
+  .tempa-two .why-we-content-text h1{
+    font-size: 28px !important;
+  }
+  .tempa-three .section-heading p{
+    font-size: 28px !important;
+  }
+  .tempa-four .section-heading p{
+    font-size: 28px !important;
+  }
+  .tempa-five .section-heading p{
+    font-size: 28px !important;
+  }
+  .tempa-five h2{
+    font-size: 28px !important;
+  }
+  .tempa-six .section-heading h2{
+    font-size: 28px !important;
+  }
 }
 
 @media (max-width: 1024px) {
+  .tempa-six .section-heading h2{
+    font-size: 26px !important;
+  }
+  .tempa-five h2{
+    font-size: 26px !important;
+  }
+  .tempa-five .section-heading p{
+    font-size: 26px !important;
+  }
+  .tempa-four .section-heading p{
+    font-size: 26px !important;
+  }
+  .tempa-three .section-heading p{
+    font-size: 26px !important;
+  }
+  .tempa-two .why-we-content-text h1{
+    font-size: 26px !important;
+  }
+  .tempa-two .section-heading p{
+    font-size: 26px !important;
+  }
+  .tempa-one .p_titulo1{
+    font-size: 16px;
+  }
+  .tempa-one .p_titulo{
+    font-size: 26px !important;
+  }
   .nfeature-inner{
     margin-top: 50px !important;
     margin-bottom: 0px !important;
@@ -706,6 +761,9 @@ body {
   }
   .logistic-bottom .logistic-heading{
     font-size: 23px;
+  }
+  .tempa-five p{
+    font-size: 16px !important;
   }
   .logistic-bottom p{
     font-size: 16px;
@@ -808,6 +866,15 @@ body {
   .why-we-content-text .contact-details {
     margin-bottom: 10px !important;
   }
+  .tempa-two .why-we-content-text p{
+    font-size: 16px !important;
+  }
+  .tempa-six p{
+    font-size: 16px !important;
+  }
+  .tempa-six h2{
+    font-size: 16px !important;
+  }
 }
 
 @media (max-width: 991px) {
@@ -849,6 +916,62 @@ body {
 }
 
 @media (max-width: 767px) {
+  .tempa-six .col-md-4{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tempa-five .col-md-5{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tempa-five h2{
+    font-size: 23px !important;
+  }
+  .tempa-five .section-heading{
+    margin-bottom: 40px !important;
+  }
+  .tempa-five{
+    padding-top: 50px !important;
+  }
+  .tempa-three .section-heading{
+    margin-bottom: 40px !important;
+  }
+  .tempa-two .col-md-6{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tempa-two .col-md-5{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tempa-two .why-we-content-text h1{
+    font-size: 23px !important;
+  }
+  .tempa-three{
+    padding-top: 50px !important;
+  }
+  .tempa-three .col-lg-7{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tempa-three .col-md-6{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tempa-one .container{
+    margin-top: 50px !important;
+  }
+  .tempa-two{
+    padding-top: 50px !important;
+  }
+  .tempa-one .col-md-5{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tempa-one .col-md-6{
+    padding-left: 0;
+    padding-right: 0;
+  }
   .nfeature-area .single-feature-area{
     min-height: unset;
   }
@@ -870,6 +993,43 @@ body {
 }
 
 @media (max-width: 575px) {
+  .tempa-six .why-we-thum{
+    text-align: center;
+  }
+  .tempa-six img{
+    width: 70%;
+  }
+  .tempa-six{
+    padding-top: 50px !important;
+  }
+  .tempa-six .section-heading h2{
+    font-size: 23px !important;
+  }
+  .tempa-five .why-we-thum{
+    text-align: center;
+  }
+  .tempa-five .why-we-thum img{
+    width: 55%;
+  }
+  .tempa-five .section-heading p{
+    font-size: 23px !important;
+  }
+  .tempa-four .section-heading p{
+    font-size: 23px !important;
+  }
+  .tempa-three .section-heading p{
+    font-size: 23px !important;
+  }
+  .tempa-two img{
+    width: 70% !important;
+  }
+  .tempa-two .section-heading p{
+    font-size: 23px !important;
+  }
+  .tempa-one .p_titulo{
+    font-size: 23px !important;
+    line-height: 23px !important;
+  }
   .nfeature-area .section-heading br{
     display: none;
   }
