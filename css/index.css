@@ -640,7 +640,9 @@ body {
 .tempa-one .p_titulo1{
   font-size: 21px;
 }
-
+.price-one .price-heading{
+  font-size:50px; color:#042f4f;font-family: 'Roboto';
+}
 /* Integraction  */
 
 
@@ -728,9 +730,48 @@ body {
   .home-bottom-area h2{
     font-size: 28px !important;
   }
+  .price-two .section-heading p{
+    font-size: 28px !important;
+  }
+  .price-five .price-heading{
+    font-size: 28px !important;
+  }
+  .price-six .price-heading{
+    font-size: 28px !important;
+  }
 }
 
 @media (max-width: 1024px) {
+  .price-six .price-heading{
+    font-size: 26px !important;
+  }
+  .price-five .price-heading{
+    font-size: 26px !important;
+  }
+  .price-two .section-heading p{
+    font-size: 26px !important;
+    margin-top: 50px !important;
+  }
+  .price-one{
+    margin-bottom: 50px !important;
+  }
+  .price-one .container{
+    margin-top: 50px !important;
+    margin-bottom: 0 !important;
+  }
+  .price-one .section-heading{
+    margin-bottom: 20px !important;
+  }
+  .price-one .price-heading{
+    margin-bottom: 20px;
+  }
+  .price-one .price-para-one{
+    font-size: 17px !important;
+    margin-bottom: 10px;
+  }
+  .price-one .price-para-two{
+    font-size: 17px !important;
+  }
   .home-bottom-area h2{
     font-size: 26px !important;
   }
@@ -890,6 +931,12 @@ body {
   .home-bottom-area p{
     font-size: 16px !important;
   }
+  .price-two .single-feature-area .single-heading{
+    font-size: 26px !important;
+  }
+  .price-six p{
+    font-size: 16px !important;
+  }
  
 }
 
@@ -932,6 +979,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .price-one .section-heading br{
+    display: none;
+  }
   .home-bottom-area .section-heading{
     margin-bottom: 70px !important;
   }
@@ -1013,15 +1063,99 @@ body {
   .map-responsive {
     width: 100% !important;
   }
+  .price-contact-one{
+    padding-left: 0 !important;
+    padding-right: 5px !important;
+  }
+  .price-contact-two{
+    padding-right: 0 !important;
+    padding-left: 5px !important;
+  }
+  .price-four .col-md-6{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .price-four{
+    padding-top: 50px !important;
+  }
+  .price-five{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  .price-five .section-heading{
+    margin-bottom: 0 !important;
+  }
+  .price-six{
+    padding-top: 50px !important;
+  }
 }
 
 @media (max-width: 575px) {
+  .price-six .price-last-heading{
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .price-six .price-heading{
+    font-size: 23px !important;
+    line-height: 34px !important;
+  }
+  .price-six .why-we-thum{
+    text-align: center;
+  }
+  .price-six .why-we-thum img{
+    width: 60%;
+  }
+  .price-five .section-heading{
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  .price-five .price-heading{
+    font-size: 23px !important;
+  }
+  .price-four #submitbtn{
+    font-size: 14px !important;
+    padding: 7px 30px !important;
+  }
+  .price-four .price-heading{
+    font-size: 23px !important;
+    line-height: 34px !important;
+  }
+  .price-four p{
+    font-size: 16px !important;
+    margin-bottom: 20px !important;
+  }
+  .price-two .single-feature-area{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .price-three #submitbtn{
+    font-size: 14px !important;
+    padding: 7px 30px !important;
+  }
+  .price-two .single-feature-area .single-heading{
+    font-size: 23px !important;
+    line-height: 34px !important;
+  }
+  .price-two .section-heading p{
+    font-size: 23px !important;
+    line-height: 34px !important;
+  }
+  .price-one .contact{
+    height: unset !important;
+  }
+  .price-one button{
+    padding: 10px 12px;
+    font-size: 14px !important;
+  }
   .home-bottom-area #submitbtn{
     font-size: 14px !important;
     padding: 10px 12px !important;
   }
   .home-bottom-area h2{
     font-size: 23px !important;
+  }
+  .price-one .container{
+    margin-top: 50px !important;
   }
   .welcome-area{
     margin-bottom: 50px !important;
@@ -1144,6 +1278,13 @@ body {
   }
   .contact-bottom-area .why-we-thum img {
     width: 55% !important;
+  }
+}
+
+
+@media(max-width: 325px){
+  .price-one button{
+    padding: 10px 10px !important;
   }
 }
 
