@@ -1091,6 +1091,9 @@ body {
 }
 
 @media (max-width: 575px) {
+  .price-four p img{
+    width: 30px;
+  }
   .price-six .price-last-heading{
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
