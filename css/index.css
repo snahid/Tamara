@@ -864,9 +864,13 @@ body {
 }
 
 @media (max-width: 575px) {
+  .nfeature-area .section-heading br{
+    display: none;
+  }
   .nfeature-area .section-heading p {
     font-size: 23px;
     line-height: 34px;
+    margin-bottom: 20px;
   }
   .client-feedback-area .section-heading {
     margin-bottom: 2em !important;
